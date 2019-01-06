@@ -1,0 +1,15 @@
+{
+  "name": "sequence-n-x",
+  "version": "0.0.0",
+  "description": "Module used for generating sequences of indefinite length using a function with ability to reference previous elements",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": {
+    "name":"Dmitry Degtiariov",
+    "email":"degtiariov.d@gmail.com"
+  },
+  "license": "MIT",
+  "keywords":["sequence","lazy"]
+
+}
