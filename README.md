@@ -4,12 +4,12 @@ Module used for generating sequences of indefinite length using a function with 
 It produces values when needed and stores them after they were required for the first time
 
 
-##Installation
+## Installation
 ```
 $ npm i --save sequence-n-x
 ```
 
-##Examples
+## Examples
 
 Fibonacci numbers
 ```
@@ -35,12 +35,12 @@ Range of integers starting with 0
 console.log(sq().take(5)); // 0 1 2 3 4
 ```
 
-##Interface
+## Interface
 
-###Creating an object
+### Creating an object
 const mySequence = sq(generatorFunction, initialValues, generateAtCreation);
 
-###Generator function
+### Generator function
 A function that create and return element of a sequence
 ```
 const generatorFunctionTriangular = (index , n) => n(-1)+i;
@@ -63,11 +63,11 @@ If there is a single value, it can be passed as a single value, not like an arra
 
 Default: [0]
 
-###generateAtCreation
+### generateAtCreation
 Normally new elements would be produced only when they are required, but user can specify number of elements that would be produced at the beginning
 Default: 0
 
-###Retrieving values
+### Retrieving values
 ```
 mySequence.take(amount)
 ```
@@ -81,7 +81,7 @@ mySequence.get(index)
 ```
 returns one element of provided index
 
-##Value generation details
+## Value generation details
 By default elements are generated when retrieving methods (take slice get) are called
 Each element gets generated only once and then stored
 ```
